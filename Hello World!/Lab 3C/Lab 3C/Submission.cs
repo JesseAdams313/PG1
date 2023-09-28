@@ -44,7 +44,7 @@ namespace FSPG1
     // matches the member field they are 'setting'
     public void SetRetort(string newRetort)
         {
-            retort = newRetort;
+            retort = newRetort; 
         }
 
     // Test 4 - Write a property for hidden named Hidden
