@@ -3,18 +3,17 @@ using System.Threading;
 
 namespace PokemonExample
 {
+    /// <summary>
+    /// Contains all methods for creating UI elements
+    /// </summary>
     public static class UI
     {
         /// <summary>
-        /// Clears console and prints a given text argument as a formatted dialog with key continue.
+        /// Creates menus for use in selection sequences
         /// </summary>
-        /// <param name="text"></param>
-        /// 
-
-        //Child (inner) Menu Class
-
         public class Menu
         {
+
             //feilds
             public string[] items;
 
@@ -24,39 +23,34 @@ namespace PokemonExample
             {
                 this.items = items;
             }
-
-            //Displays menu item
+            /// <summary>
+            /// Displays all menu items with selection identifiers
+            /// </summary>
             public void Display()
-                {
-                    int counter = 1;
+            {
+                int counter = 1;
 
-                    foreach(string item in items)
+                foreach (string item in items)
+                {
+                    Console.WriteLine($"[{counter}]{item}");
                     counter++;
                 }
+            }
         }
+
+        /// <summary>
+        /// Clears console and prints a given text argument as a formatted dialog with key continue.
+        /// </summary>
+        /// <param name="text"></param>
+        /// 
         public static void ShowDialog(string text)
         {
             Console.Clear();
-
-            foreach(char letter in text)
-            {
-                Console.Write(letter);
-                Thread.Sleep(30);
-            }
-
-            Console.WriteLine("\n\nPress any key to continue...");
-            Console.ReadKey();
-        }
-
-        public static void ShowDialog(string text, string subject)
-        {
-            Console.Clear();
-
-            Console.Write($"{subject}: ");
-
+            //Displays text one character at a time to simulate dialog from pokemon
             foreach (char letter in text)
             {
                 Console.Write(letter);
+                //Delay each itteration by 30ms
                 Thread.Sleep(30);
             }
 
@@ -64,6 +58,30 @@ namespace PokemonExample
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// Clears console and prints a given text argument as spoken by a subject
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="subject"></param>
+        public static void ShowDialog(string text, string subject)
+        {
+            Console.Clear();
+            //Displays text one character at a time to simulate dialog from pokemon
+            foreach (char letter in text)
+            {
+                Console.Write(letter);
+                //Delay each itteration by 30ms
+                Thread.Sleep(30);
+            }
+
+            Console.WriteLine("\n\nPress any key to continue...");
+            Console.ReadKey();
+        }
+
+        /// <summary>
+        /// Prompt ueser for string input and validates that its not empty
+        /// </summary>
+        /// <returns></returns>
         public static string PromptUserName()
         {
             string name = null;
@@ -86,35 +104,11 @@ namespace PokemonExample
             return name;
         }
 
-        public static void PromptUserLeavingTown(string playerName) 
-    {
 
-        bool playerHasLeft = false;
 
-        do
-        {
-            Console.Clear();
-
-            Console.Write("Do you want to leave? [y/n]: ");
-
-            string response = Console.ReadLine();
-
-            if (response.ToLower() == "yes" || response.ToLower() == "y")
-            {
-                UI.ShowDialog("It's dangerous to go out in tall grass alone!", "OAK");
-                UI.ShowDialog("Follow me back to my lab!", "OAK");
-                playerHasLeft = true;
-            }
-            else
-            {
-                UI.ShowDialog($"{playerName} never leaves town.");
-            }
-
-        } while (!playerHasLeft);
-
-            
-    }
-        
 
     }
+
+
+
 }

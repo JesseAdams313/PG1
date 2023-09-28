@@ -2,6 +2,7 @@
 
 namespace PokemonExample
 {
+
     public class Game
     {
         // Member fields
@@ -23,15 +24,15 @@ namespace PokemonExample
             UI.ShowDialog("Welcome to the wild world of pokemon!");
             UI.ShowDialog("What is your name?");
 
-            player = UI.PromptUserName();
+            player.Name = UI.PromptUserName();
 
             UI.ShowDialog($"Welcome {player.Name}!");
 
-            UI.PromptUserLeavingTown(player.Name);
+            Events.LeavingTown(player.Name);
 
             UI.ShowDialog("You follow Professor Oak bac to the lab.");
 
-            player.AddPokeMonToTeam(Events.PokemonSelection());
+            player.AddPokemonToTeam(Events.PokemonSelection());
         }
     }
 }
