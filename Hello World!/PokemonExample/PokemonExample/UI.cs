@@ -9,6 +9,31 @@ namespace PokemonExample
         /// Clears console and prints a given text argument as a formatted dialog with key continue.
         /// </summary>
         /// <param name="text"></param>
+        /// 
+
+        //Child (inner) Menu Class
+
+        public class Menu
+        {
+            //feilds
+            public string[] items;
+
+
+            //Menu Constructor
+            public Menu(string[] items)
+            {
+                this.items = items;
+            }
+
+            //Displays menu item
+            public void Display()
+                {
+                    int counter = 1;
+
+                    foreach(string item in items)
+                    counter++;
+                }
+        }
         public static void ShowDialog(string text)
         {
             Console.Clear();
@@ -62,51 +87,34 @@ namespace PokemonExample
         }
 
         public static void PromptUserLeavingTown(string playerName) 
+    {
+
+        bool playerHasLeft = false;
+
+        do
         {
+            Console.Clear();
 
-            bool playerHasLeft = false;
+            Console.Write("Do you want to leave? [y/n]: ");
 
-            do
+            string response = Console.ReadLine();
+
+            if (response.ToLower() == "yes" || response.ToLower() == "y")
             {
-                Console.Clear();
+                UI.ShowDialog("It's dangerous to go out in tall grass alone!", "OAK");
+                UI.ShowDialog("Follow me back to my lab!", "OAK");
+                playerHasLeft = true;
+            }
+            else
+            {
+                UI.ShowDialog($"{playerName} never leaves town.");
+            }
 
-                Console.Write("Do you want to leave? [y/n]: ");
-
-                string response = Console.ReadLine();
-
-                if (response.ToLower() == "yes" || response.ToLower() == "y")
-                {
-                    UI.ShowDialog("It's dangerous to go out in tall grass alone!", "OAK");
-                    UI.ShowDialog("Follow me back to my lab!", "OAK");
-                    playerHasLeft = true;
-                }
-                else
-                {
-                    UI.ShowDialog($"{playerName} never leaves town.");
-                }
-
-            } while (!playerHasLeft);
+        } while (!playerHasLeft);
 
             
-        }
+    }
+        
 
-        public static void PokemonSelectionEvent()
-        {
-            UI.ShowDialog("Here choose from one of these three pokemon", "OAK");
-
-            string[] starterPokemon = { "Charmander", "Squirtel", "Bulbasaur" };
-
-            int counter = 1;
-            Console.Clear() ;
-
-            foreach(string pokemon in starterPokemon)
-            {
-                //[0] Charmander
-                Console.WriteLine($"[{counter}] {pokemon}");
-                counter++;
-            }
-                Console.Write("\nChoose a Pokemon: ");
-                Console.ReadLine();
-        }
     }
 }
