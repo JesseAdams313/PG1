@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace FSPG1
 {
+    public enum MathOperator
+    {
+        Add,
+        Subtract,
+        Multiply,
+        Divide,
+        Modulo
+    }
     public class Submissions
     {
         /*
@@ -48,9 +56,25 @@ namespace FSPG1
         //
         // You do not need to worry about/handle any other possible input values (the
         // only values passed to the method will be 0, 1, 2, 3 or 4)
+
+
         public static MathOperator Test1(int input)
         {
-            return MathOperator.Modulo;
+            switch (input)
+            {
+                case 0:
+                    return MathOperator.Add;
+                case 1:
+                    return MathOperator.Subtract;
+                case 2:
+                    return MathOperator.Multiply;
+                case 3:
+                    return MathOperator.Divide;
+                case 4:
+                    return MathOperator.Modulo;
+                default:
+                    throw new ArgumentException("Invalid input. Input must be 0, 1, 2, 3, or 4.");
+            }
         }
 
         // Test2 - Use the MathOperator enum you developed for Test1 to decide what
@@ -58,8 +82,29 @@ namespace FSPG1
         // performing the indicated operation on the int values.
         public static int Test2(int number1, int number2, MathOperator operation)
         {
-            return 0;
+            switch (operation)
+            {
+                case MathOperator.Add:
+                    return number1 + number2;
+                case MathOperator.Subtract:
+                    return number1 - number2;
+                case MathOperator.Multiply:
+                    return number1 * number2;
+                case MathOperator.Divide:
+                    if (number2 != 0)
+                        return number1 / number2;
+                    else
+                        throw new ArgumentException("Division by zero is not allowed.");
+                case MathOperator.Modulo:
+                    if (number2 != 0)
+                        return number1 % number2;
+                    else
+                        throw new ArgumentException("Modulo by zero is not allowed.");
+                default:
+                    throw new ArgumentException("Invalid MathOperator.");
+            }
         }
+
 
         // Test3 - Given a bool parameter, return a string indicating
         // the related term. When the bool is true return "Proven", 
@@ -68,8 +113,12 @@ namespace FSPG1
         // case does not matter
         public static string Test3(bool input)
         {
-            return null;
+            if (input)
+                return "Proven";
+            else
+                return "Denied";
         }
+
 
         // Test4 - Given a weight in either kilograms or pounds and a
         // bool, you will either convert kilograms to pounds (when the 
@@ -81,8 +130,12 @@ namespace FSPG1
         // 1 lb = 0.453592 kg
         public static double Test4(double input, bool kiloToLb)
         {
-            return 0;
+            if (kiloToLb)
+                return Math.Round(input * 2.20462, 3); // Kilograms to Pounds
+            else
+                return Math.Round(input * 0.453592, 3); // Pounds to Kilograms
         }
+
 
         // Test5 - Given an int that represents the severity of an employee infraction,
         // return the associated action required as a string.
@@ -95,7 +148,19 @@ namespace FSPG1
         // (exactly as above) but are not case sensitive
         public static string Test5(int input)
         {
-            return null;
+            switch (input)
+            {
+                case 1:
+                    return "Verbal Reprimand";
+                case 2:
+                    return "Formal Reprimand";
+                case 3:
+                    return "Suspension";
+                case 4:
+                    return "Termination";
+                default:
+                    throw new ArgumentException("Invalid infraction severity.");
+            }
         }
 
         // Test6 - Use an object's Equal method. Given two Triangle objects,
@@ -108,7 +173,7 @@ namespace FSPG1
         // method that accepts a single parameter.
         public static bool Test6(Triangle t1, Triangle t2)
         {
-            return false;
+            return t1.Equals(t2);
         }
 
         // Given the three sides of a Triangle, determine if the triangle
@@ -118,8 +183,10 @@ namespace FSPG1
         // (c) will always be the longest side given.
         public static bool Test7(int a, int b, int c)
         {
-            return false;
+            // Check if the sum of squares of the two shorter sides equals the square of the longest side
+            return a * a + b * b == c * c;
         }
+
 
         // Given the grade variable, which indicates a student's numeric grade, 
         // determine which letter grade they should receive. Return the proper 
@@ -136,7 +203,19 @@ namespace FSPG1
         //  < 0 or> 100 	    '?'
         public static char Test8(double grade)
         {
-            return '~';
+            if (grade >= 90 && grade <= 100)
+                return 'A';
+            else if (grade >= 80 && grade < 90)
+                return 'B';
+            else if (grade >= 73 && grade < 80)
+                return 'C';
+            else if (grade >= 70 && grade < 73)
+                return 'D';
+            else if (grade >= 0 && grade < 70)
+                return 'F';
+            else
+                return '?';
         }
+
     }
 }

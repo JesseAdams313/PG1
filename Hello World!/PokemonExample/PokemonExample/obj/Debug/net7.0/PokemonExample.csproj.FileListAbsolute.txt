@@ -1,0 +1,14 @@
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\bin\Debug\net7.0\PokemonExample.exe
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\bin\Debug\net7.0\PokemonExample.deps.json
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\bin\Debug\net7.0\PokemonExample.runtimeconfig.json
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\bin\Debug\net7.0\PokemonExample.dll
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\bin\Debug\net7.0\PokemonExample.pdb
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\PokemonExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\PokemonExample.AssemblyInfoInputs.cache
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\PokemonExample.AssemblyInfo.cs
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\PokemonExample.csproj.CoreCompileInputs.cache
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\PokemonExample.dll
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\refint\PokemonExample.dll
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\PokemonExample.pdb
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\PokemonExample.genruntimeconfig.cache
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\PokemonExample\PokemonExample\obj\Debug\net7.0\ref\PokemonExample.dll
