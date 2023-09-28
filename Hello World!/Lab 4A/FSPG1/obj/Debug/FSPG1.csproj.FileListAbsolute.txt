@@ -18,10 +18,10 @@ C:\Users\marty\Desktop\FSO Downloads\05 - May labs\Test\Lab 4A\FSPG1\bin\Debug\F
 C:\Users\marty\Desktop\FSO Downloads\05 - May labs\Test\Lab 4A\FSPG1\obj\Debug\FSPG1.csproj.CoreCompileInputs.cache
 C:\Users\marty\Desktop\FSO Downloads\05 - May labs\Test\Lab 4A\FSPG1\obj\Debug\FSPG1.exe
 C:\Users\marty\Desktop\FSO Downloads\05 - May labs\Test\Lab 4A\FSPG1\obj\Debug\FSPG1.pdb
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\obj\Debug\FSPG1.csproj.AssemblyReference.cache
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\obj\Debug\FSPG1.csproj.CoreCompileInputs.cache
 C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\bin\Debug\FSPG1.exe.config
 C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\bin\Debug\FSPG1.exe
 C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\bin\Debug\FSPG1.pdb
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\obj\Debug\FSPG1.csproj.AssemblyReference.cache
+C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\obj\Debug\FSPG1.csproj.CoreCompileInputs.cache
 C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\obj\Debug\FSPG1.exe
 C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 4A\FSPG1\obj\Debug\FSPG1.pdb

@@ -19,10 +19,3 @@ C:\Users\Jesse\OneDrive\Desktop\GD CS\PG1\Lab 3C\Lab 3C\obj\Debug\Lab 3C.pdb
 C:\Users\Jesse\OneDrive\Desktop\GD CS\PG1\Lab 3C\Lab 3C\bin\Debug\Lab 3C.exe.config
 C:\Users\Jesse\OneDrive\Desktop\GD CS\PG1\Lab 3C\Lab 3C\bin\Debug\Lab 3C.exe
 C:\Users\Jesse\OneDrive\Desktop\GD CS\PG1\Lab 3C\Lab 3C\bin\Debug\Lab 3C.pdb
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 3C\Lab 3C\bin\Debug\Lab 3C.exe.config
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 3C\Lab 3C\bin\Debug\Lab 3C.exe
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 3C\Lab 3C\bin\Debug\Lab 3C.pdb
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 3C\Lab 3C\obj\Debug\Lab 3C.csproj.AssemblyReference.cache
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 3C\Lab 3C\obj\Debug\Lab 3C.csproj.CoreCompileInputs.cache
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 3C\Lab 3C\obj\Debug\Lab 3C.exe
-C:\Users\Jesse\OneDrive\Desktop\PG1(new)\PG1 Repo\Hello World!\Lab 3C\Lab 3C\obj\Debug\Lab 3C.pdb

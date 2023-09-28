@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokemonExample;
+using System;
 
 namespace HelloWorld
 {
@@ -6,7 +7,8 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Game game = new Game();
+            game.Start();
         }
     }
 }
