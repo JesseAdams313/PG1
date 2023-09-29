@@ -26,7 +26,8 @@ namespace PokemonExample
 
             player.Name = UI.PromptUserName();
 
-            UI.ShowDialog($"Welcome {player.Name}!");
+            UI.ShowDialog($"Welcome \u001b[32m{player.Name}\u001b[0m!");
+
 
             Events.LeavingTown(player.Name);
 

@@ -46,7 +46,7 @@ namespace PokemonExample
         {
             Pokemon starter = null;
 
-            UI.ShowDialog("Here choose from one of these three pokemon", "OAK");
+            UI.ShowDialog("\u001b[34mHere choose from one of these three pokemon\u001b[0m");
             Console.Clear();
 
             //create menu items

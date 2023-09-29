@@ -74,7 +74,7 @@ namespace PokemonExample
                 Thread.Sleep(30);
             }
 
-            Console.WriteLine("\n\nPress any key to continue...");
+            Console.WriteLine($"\n\nPress any key to continue...");
             Console.ReadKey();
         }
 
@@ -89,13 +89,13 @@ namespace PokemonExample
             do
             {
                 Console.Clear();
-                Console.Write("Name: ");
+                Console.Write("\u001b[34mName: \u001b[0m");
 
                 name = Console.ReadLine();
 
                 if (string.IsNullOrEmpty(name))
                 {
-                    Console.WriteLine("Username cannot be empty! Try again.");
+                    Console.WriteLine("\u001b[31mUsername cannot be empty! Try again. Error!\u001b[0m");
                     Console.ReadKey();
                 }
 
